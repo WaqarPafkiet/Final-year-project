@@ -1,0 +1,5 @@
+Media Studies|Mass Communication|Film Production|Project & Supply Chain Management|Accounting & Finance|Software Engineering|Computer Science|Biomedical Engineering|Mathematics|Physics
+|Applied Psychology|Electronics Engineering|Biological Engineering|Chemical Engineering|Computer Engineering|Electrical Engineering|[^a-zA-Z0-9]Chemical[^a-zA-Z0-9]|CS|Environmental Engineering|Mechanical Engineering|Geology
+|Psychology|Social Sciences|Maritime Business and Management|Economics and Finance|Business Administration|Accounting and Finance|Mass Communication|Project Management|Disaster Management
+|Information Security|Pharmacology|Pharmaceutics|Mechanical|Economics|MICROBIOLOGY|[^a-zA-Z0-9][(). ]?C[. ]?S[^a-zA-Z0-9]|Environmental s?S?tudies|Business Administration|Pre-[Ee]?ngineering
+|Public Administration|Supply [Cc]hain [Mm]anagement|Materials [Ee]ngineering|Electronics|Telecommunication Engineering|HONS|[pP]etroleum [eE]ngineer|Finance

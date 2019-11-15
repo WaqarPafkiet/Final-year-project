@@ -1,0 +1,5 @@
+[cC]#|[Jj]ava|[Pp][. -]?[Hh][. -]?[Pp]|[.][Nn]et|[Dd][oO][tT][ -.]?[Nn][Ee][Tt]|[mM][Yy][sS][Qq][Ll]|Android [aA]pplications|[bB]oot[ -]?[sS]trap|[Hh][tT][mM][lL]|[Cc][. -]?[Ss][. -]?[Ss]|XML|Android|M[Ss][- .][Ww][Oo][Rr][Dd][ ,]?|M[Ss][- .][Oo][Ff][Ff][Ii][Cc][Ee][ ,.]?
+|[Cc]ommunications [s]kills|[cC]ritical [tT]hinking|[pP]roblem [Ss]olving|C[ .]N[ .]C Programming|Event Management|[Mm][aA][tT][Ll][aA][bB]|Networking|Troubleshooting|Power [Ee]lectronics|Microcontroller|[Jj]ava[ ]?[Ss]cript|[Pp]ython|[jJ][Ii][Rr][aA]|[Ss][. ]?[Qq][. ]?[Ll]
+|[Mm][. ]?[Vv][. ]?[Cc]|[Ee]ntity [Ff]ramework|[aA][Jj][Aa][Xx]|[Cc][+][+]|Management|Analytical [Ss]kills|ASP[.]?NET|asp[.]?net
+
+

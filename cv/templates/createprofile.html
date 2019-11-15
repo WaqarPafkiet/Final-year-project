@@ -1,0 +1,215 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<!--&lt;!&ndash; start banner Area &ndash;&gt;-->
+			<!--<section class="banner-area relative" id="home">-->
+				<!--<div class="overlay overlay-bg"></div>-->
+				<!--<div class="container">-->
+					<!--<div class="row fullscreen d-flex align-items-center justify-content-center">-->
+						<!--<div class="banner-content col-lg-5">-->
+							<!--<h1 class="text-white">-->
+								<!--&lt;!&ndash; <span>Login</span> &ndash;&gt; Register-->
+							<!--</h1>-->
+							<!--<form action="" method="post">-->
+								<!--<div class="row justify-content-center form-wrap">-->
+									<!--<div class="col-lg-12 form-cols">-->
+										<!--<input type="text" class="form-control" name="company_name" placeholder="Enter First Name">-->
+										<!--<br>-->
+										<!--<input type="text" class="form-control" name="company_loc" placeholder="Enter Last Name">-->
+										<!--<br>-->
+										<!--<input type="text" class="form-control" name="company_desc" placeholder="Enter Email">-->
+										<!--<br>-->
+										<!--<input type="email" class="form-control" name="company_email" placeholder="Enter Password">-->
+										<!--<br>-->
+                                        <!--<input type="email" class="form-control" name="company_contact" placeholder="Enter Password">-->
+										<!--<br>-->
+                                        <!--<input type="email" class="form-control" name="job_title" placeholder="Enter Password">-->
+										<!--<br>-->
+                                        <!--<input type="email" class="form-control" name="job_loc" placeholder="Enter Password">-->
+										<!--<br>-->
+                                        <!--<input type="email" class="form-control" name="job_desc" placeholder="Enter Password">-->
+										<!--<br>-->
+                                        <!--<input type="email" class="form-control" name="job_skill" placeholder="Enter Password">-->
+										<!--<br>-->
+                                        <!--<input type="email" class="form-control" name="job_qual" placeholder="Enter Password">-->
+										<!--<br>-->
+									<!--</div>-->
+									<!--<div class="col-lg-12 form-cols">-->
+										<!--<button type="submit" class="btn btn-info">-->
+									      <!--<span class="lnr lnr-user"></span> Register-->
+									    <!--</button>-->
+									<!--</div>-->
+									<!--&lt;!&ndash; <div class="col-lg-3 form-cols">-->
+										<!--<div class="default-select" id="default-selects"">-->
+											<!--<select>-->
+												<!--<option value="1">Select area</option>-->
+												<!--<option value="2">Dhaka</option>-->
+												<!--<option value="3">Rajshahi</option>-->
+												<!--<option value="4">Barishal</option>-->
+												<!--<option value="5">Noakhali</option>-->
+											<!--</select>-->
+										<!--</div>-->
+									<!--</div>-->
+									<!--<div class="col-lg-3 form-cols">-->
+										<!--<div class="default-select" id="default-selects2">-->
+											<!--<select>-->
+												<!--<option value="1">All Category</option>-->
+												<!--<option value="2">Medical</option>-->
+												<!--<option value="3">Technology</option>-->
+												<!--<option value="4">Goverment</option>-->
+												<!--<option value="5">Development</option>-->
+											<!--</select>-->
+										<!--</div>-->
+									<!--</div> &ndash;&gt;-->
+									<!--&lt;!&ndash; <div class="col-lg-2 form-cols">-->
+									    <!--<button type="button" class="btn btn-info">-->
+									      <!--<span class="lnr lnr-magnifier"></span> Search-->
+									    <!--</button>-->
+									<!--</div> &ndash;&gt;-->
+								<!--</div>-->
+                                <!--<div class="container">{% include 'includes/_messages.html' %}</div>-->
+							<!--</form>-->
+							<!--&lt;!&ndash; <p class="text-white"> <span>Search by tags:</span> Tecnology, Business, Consulting, IT Company, Design, Development</p> &ndash;&gt;-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</section>-->
+			<!--&lt;!&ndash; End banner Area &ndash;&gt;-->
+
+
+<!-- start banner Area -->
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+								Create Profile
+							</h1>
+							<p class="text-white link-nav"><a href="/home">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a> Create Profile</a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->
+
+<!-- Start Align Area -->
+			<div class="whole-wrap">
+                <div class="container">{% include 'includes/_messages.html' %}</div>
+				<div class="container">
+                    <div class="section-top-border">
+						<div class="row">
+							<div class="col-lg-8 col-md-8">
+
+								<h3 class="mb-30">Personal Info</h3>
+
+								<form method="post" enctype="multipart/form-data">
+
+									<div class="mt-10">
+										<input onfocus="(this.type='date')" name="dob" placeholder="Date Of Birth" required class="single-input">
+									</div>
+
+									<div class="default-select mt-10" id="default-select">
+										<select required class="single-input" name="gender">
+											<option value="">Select Gender</option>
+											<option value="Male">Male</option>
+											<option value="Female">Female</option>
+										</select>
+									</div>
+
+									<div class="default-select mt-10" id="default-select">
+										<select required class="single-input" name="maritalstatus">
+											<option value="">Select Marital Status</option>
+											<option value="Unmarried">Unmarried</option>
+											<option value="Married">Married</option>
+										</select>
+									</div>
+
+									<div class="mt-10">
+										<input type="text" name="country" placeholder="Country" required class="single-input">
+									</div>
+
+                                    <div class="mt-10">
+										<input type="text" name="city" placeholder="City" required class="single-input">
+									</div>
+
+									<div class="mt-10">
+										<input type="text" name="phone" placeholder="Phone" required class="single-input">
+									</div>
+
+									<br><br>
+
+									<h3 class="mb-30">Upload CV</h3>
+
+									<div class="mt-10">
+										<input type="file" name="resume" required class="single-input">
+									</div>
+
+									<!--<br><br>-->
+
+									<!--<h3 class="mb-30">Education</h3>-->
+
+									<!--<div class="default-select mt-10" id="default-select">-->
+										<!--<select required class="single-input" name="qualification">-->
+											<!--<option value="">Select Qualification</option>-->
+											<!--<option value="Matric / O-Level">Matric / O-Level</option>-->
+											<!--<option value="Inter / A-Level">Inter / A-Level</option>-->
+											<!--<option value="Undergraduate">Undergraduate</option>-->
+											<!--<option value="Graduate">Graduate</option>-->
+											<!--<option value="Postgraduate">Postgraduate</option>-->
+										<!--</select>-->
+									<!--</div>-->
+
+									<!--<div class="mt-10">-->
+										<!--<input type="text" name="institute" placeholder="Institute" required class="single-input">-->
+									<!--</div>-->
+
+									<!--<div class="default-select mt-10" id="default-select">-->
+										<!--<select required class="single-input" name="graduated">-->
+											<!--<option value="">Select Graduation Progress</option>-->
+											<!--<option value="Graduated">Graduated</option>-->
+											<!--<option value="In progress">In progress</option>-->
+										<!--</select>-->
+									<!--</div>-->
+
+                                    <!--<div class="mt-10">-->
+										<!--<input type="text" name="grade" placeholder="Grade/GPA" required class="single-input">-->
+									<!--</div>-->
+
+									<!--<br><br>-->
+
+									<!--<h3 class="mb-30">Experience</h3>-->
+
+									<!--<div class="mt-10">-->
+										<!--<input type="number" name="experience" placeholder="Experience (in years)" required class="single-input">-->
+									<!--</div>-->
+
+									<!--<div class="default-select mt-10" id="default-select">-->
+										<!--<select required class="single-input" name="careerlevel">-->
+											<!--<option value="">Select Career Level</option>-->
+											<!--<option value="Intern / Student">Intern / Student</option>-->
+											<!--<option value="Entry Level">Entry Level</option>-->
+											<!--<option value="Experienced Professional">Experienced Professional</option>-->
+											<!--<option value="Executive">Executive</option>-->
+										<!--</select>-->
+									<!--</div>-->
+
+                                    <!--<div class="mt-10">-->
+										<!--<input type="text" name="industry" placeholder="Industry / Field of work" required class="single-input">-->
+									<!--</div>-->
+
+									<!--<div class="mt-10">-->
+										<!--<textarea class="single-textarea" name="skills" placeholder="Write Skills (separate by comma)" required></textarea>-->
+									<!--</div>-->
+
+                                    <div class="mt-40">
+                                        <button type="submit" class="genric-btn info e-large">Submit</button>
+									</div>
+                                </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+{% endblock %}

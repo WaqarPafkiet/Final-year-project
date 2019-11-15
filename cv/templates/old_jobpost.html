@@ -1,0 +1,136 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+
+{% from "includes/_formhelpers.html" import render_field %}
+
+
+<form method="post" action="">
+
+<div class="container">
+
+    <div class="jumbotron" style="background-color: #ffdfb2">
+        <center><h2>"Reach the quality candidates you can’t find anywhere else..."</h2></center>
+    </div>
+
+
+    <div class="panel panel-primary">
+      <!--<div class="panel-heading">Panel with panel-primary class</div>-->
+      <!--<div class="panel-body">Panel Content</div>-->
+
+    <div class="panel-heading"><center><h3>Enter Company Information</h3></center></div>
+
+
+
+
+        <div class="panel-body">
+
+
+
+    <div class="form-group">
+    <!--<label for="exampleInputPassword1">Company Name</label>-->
+    <!--<input class="form-control" id="exampleInputPassword1" placeholder="Enter Company Name">-->
+        {{render_field(form.company_name, class_="form-control")}}
+  </div>
+
+    <div class="form-group">
+    <!--<label for="exampleInputPassword1">Company Location</label>-->
+    <!--<input class="form-control" id="exampleInputPassword1" placeholder="Enter Company Location">-->
+        {{render_field(form.company_loc, class_="form-control")}}
+  </div>
+
+    <div class="form-group">
+    <!--<label for="exampleInputPassword1">Company Description</label>-->
+    <!--<br>-->
+    <!--<textarea class="form-control" rows="5" placeholder="Enter description here..."></textarea>-->
+        {{render_field(form.company_desc, class_="form-control")}}
+  </div>
+
+    <div class="form-group">
+    <!--<label for="exampleInputEmail1">Email address</label>-->
+    <!--<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">-->
+        {{render_field(form.company_email, class_="form-control")}}
+    </div>
+
+  <div class="form-group">
+    <!--<label for="exampleInputPassword1">Contact Number</label>-->
+    <!--<input class="form-control" id="exampleInputPassword1" placeholder="Enter Contact Number">-->
+      {{render_field(form.company_contact, class_="form-control")}}
+  </div>
+
+    <!--<button class="btn btn-success btn-lg" type="submit">Submit</button>-->
+
+  <!-- <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input">
+      Check me out
+    </label>
+  </div> -->
+
+
+
+    </div>
+    </div>
+
+
+    <br><br>
+
+<div class="panel panel-primary">
+
+<div class="panel-heading"><center><h3>Enter Job Information</h3></center></div>
+
+
+<div class="panel-body">
+
+
+<div class="form-group">
+    <!--<label for="exampleInputPassword1">Job Title</label>-->
+    <!--<input class="form-control" id="exampleInputPassword1" placeholder="Enter Job Title">-->
+    {{render_field(form.job_title, class_="form-control")}}
+  </div>
+
+
+  <div class="form-group">
+    <!--<label for="exampleInputPassword1">Job Location</label>-->
+    <!--<input class="form-control" id="exampleInputPassword1" placeholder="Enter Job Location">-->
+    {{render_field(form.job_loc, class_="form-control")}}
+  </div>
+
+    <div class="form-group">
+    <!--<label for="exampleInputPassword1">Job Description</label>-->
+    <!--<br>-->
+    <!--<textarea class="form-control" placeholder="Enter description here..."></textarea>-->
+        {{render_field(form.job_desc, class_="form-control")}}
+  </div>
+
+    <div class="form-group">
+    <!--<label for="exampleInputPassword1">Job Description</label>-->
+    <!--<br>-->
+    <!--<textarea class="form-control" placeholder="Enter description here..."></textarea>-->
+        {{render_field(form.job_skill, class_="form-control")}}
+  </div>
+
+    <div class="form-group">
+    <!--<label for="exampleInputPassword1">Job Description</label>-->
+    <!--<br>-->
+    <!--<textarea class="form-control" placeholder="Enter description here..."></textarea>-->
+        {{render_field(form.job_qual, class_="form-control")}}
+  </div>
+
+        <button class="btn btn-success btn-lg" type="submit">Submit</button>
+
+  <!-- <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input">
+      Check me out
+    </label>
+  </div> -->
+
+</div>
+    </div>
+    </div>
+    </form>
+
+
+{% endblock %}

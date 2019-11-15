@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<!-- start banner Area -->
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-center">
+						<div class="banner-content col-lg-5">
+							<h1 class="text-white">
+								<!-- <span>Login</span> --> Login
+							</h1>
+							<form action="" method="post" class="login-form">
+								<div class="row justify-content-center form-wrap">
+									<div class="col-lg-12 form-cols">
+										<input type="email" class="form-control" name="email" placeholder="Enter Email">
+										<br>
+										<input type="password" class="form-control" name="password" placeholder="Enter Password">
+										<br>
+									</div>
+									<div class="col-lg-12 form-cols">
+										<button type="submit" class="btn btn-info">
+									      <span class="lnr lnr-user"></span> Login
+									    </button>
+									</div>
+									<!-- <div class="col-lg-3 form-cols">
+										<div class="default-select" id="default-selects"">
+											<select>
+												<option value="1">Select area</option>
+												<option value="2">Dhaka</option>
+												<option value="3">Rajshahi</option>
+												<option value="4">Barishal</option>
+												<option value="5">Noakhali</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-lg-3 form-cols">
+										<div class="default-select" id="default-selects2">
+											<select>
+												<option value="1">All Category</option>
+												<option value="2">Medical</option>
+												<option value="3">Technology</option>
+												<option value="4">Goverment</option>
+												<option value="5">Development</option>
+											</select>
+										</div>
+									</div> -->
+									<!-- <div class="col-lg-2 form-cols">
+									    <button type="button" class="btn btn-info">
+									      <span class="lnr lnr-magnifier"></span> Search
+									    </button>
+									</div> -->
+								</div>
+                                <div class="container">{% include 'includes/_messages.html' %}</div>
+							</form>
+							<!-- <p class="text-white"> <span>Search by tags:</span> Tecnology, Business, Consulting, IT Company, Design, Development</p> -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->
+{% endblock %}

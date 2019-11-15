@@ -1,0 +1,206 @@
+﻿{% extends 'layout.html' %}
+
+{% block body %}
+
+<br><br>
+
+		<!--banner-->
+       <div class="banner">
+			<div class="banner-top">
+			   <h3>CV SCANNER</h3>
+				<h3> - Find Job Posts related to your CV</h3>
+				<h3> - Post a Job</h3>
+			   <a class="ready" href="/login">Click Here to Get Started</a>
+				<br> <br> <br>
+				<button type="button" class="btn btn-success">Apply for a Job</button>
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<button type="button" class="btn btn-info">Post a Job</button>
+		    </div>
+	   </div>
+   <svg id="curveDownColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<path d="M0 0 C 50 100 80 100 100 0 Z"></path>
+			</svg>
+   <!--start-services-->
+	<div class="services" id="services">
+	 	  <div class="container">
+		  <h3 class="tittle">Services </h3>
+	 		<div class="box2">
+	 		   <div class="col-md-4 s-1"><a href="/login">
+	 		   	<div class="view view-fifth">
+                      <i class="glyphicon glyphicon-book"></i>
+                    <div class="mask">
+                        <h4>Get Started</h4> <br><br><br>
+                        <p>Create your C.V / Resume</p><br />
+                         <!--<p class="p2">Find best jobs based on your resume</p>-->
+                     </div>
+                    <h3>create your<br> C.V</h3>
+				    </div>
+				  </a>
+
+				</div>
+		<div class="col-md-4 s-2"><a href="/login">
+	 		   	<div class="view view-fifth">
+                      <i class="glyphicon glyphicon-pencil"></i>
+                    <div class="mask">
+                        <h4>Find best jobs</h4> <br><br><br>
+                        <p>Based on your C.V / resume</p><br />
+                         <!--<p class="p2">Will be updated soon.</p>-->
+                     </div>
+                    <h3>Browse <br> jobs</h3>
+				    </div>
+				  </a>
+
+				</div>
+			  <div class="col-md-4 s-3"><a href="/login">
+	 		   	<div class="view view-fifth">
+                     <i class="glyphicon glyphicon-paperclip"></i>
+                    <div class="mask">
+                        <h4>Post your own job</h4> <br><br><br>
+                        <p>Get Best Employees</p><br />
+                         <!--<p class="p2">Will be updated soon.</p>-->
+                     </div>
+                    <h3>Post a<br> job</h3>
+				    </div>
+				  </a>
+
+				</div>
+				<div class="clearfix"></div>
+		     </div>
+	 	    </div>
+	 	</div>
+	
+		
+      <div class="clearfix"> </div>
+   
+
+
+        <!--about-->
+	   <!--<div class="about" id="about">-->
+		     <!--<div class="container">-->
+			 	<!--<h3 class="tittle ab">About Us</h3>-->
+				 <!--<div class="about-top">-->
+				     <!--<div class="col-md-7 info">-->
+					    <!--<h5>Why Choose Us ?</h5>-->
+						  <!--<p>“Be yourself; everyone else is already taken.”   <br /> ― Oscar Wilde </p>-->
+                         <!--<p>An educational system isn’t worth a great deal if it teaches young people how to make a living but doesn’t teach them how to make a life <br /> -Anonymous.</p>-->
+					     <!--<section class="ac-container">-->
+									<!--<div>-->
+										<!--<input id="ac-1" name="accordion-1" type="checkbox" />-->
+										<!--<label for="ac-1">Our Motivation to Students</label>-->
+										<!--<article class="ac-small">-->
+											<!--<p>“Incredible change happens in your life when you decide to take control of what you do have power over instead of craving control over what you don't.” </p>-->
+										<!--</article>-->
+									<!--</div>-->
+									<!---->
+								<!--</section>-->
+
+								<!--<div class="ab-bottom">-->
+								   <!--<h5>Who we are</h5>-->
+								   <!--<p>We are the #1 skill sharing marketplace in Pakistan, connecting those who wish to teach and those who love to learn. </p>-->
+                                    <!--<p>Group Tuition Pooling will provide top quality education through the best teachers at your door step now</p>-->
+								<!--</div>-->
+								 <!---->
+					   <!--</div>-->
+				       <!--<div class="col-md-5 ab-text">-->
+					     <!--<img src="/static/images/d.jpg" alt=""/>-->
+						 <!---->
+						<!--<div class="author-title"><span class="author-designation">Students,</span>Selena,Adaline</div>-->
+						<!--</div>-->
+					   <!--</div>-->
+                       <!--<div class="clearfix"></div>-->
+					<!--</div>-->
+									<!---->
+				 <!--</div>-->
+
+
+        
+        <!--contact -->
+			 <div id="contact" class="contact">
+				<div class="container">
+				   <h3 class="tittle">Contact Us</h3>
+					 <div class="col-md-6 box">
+                         <div id="map1" class="map"></div>
+
+                         <script src="http://maps.google.com/maps/api/js?key=AIzaSyAQ4KLcxhk5taLQq_O1bwVvpX2oAEtMghA&callback=initMap"></script>
+                         <script type="text/javascript">
+
+                             jQuery(function ($) {
+                                 function init_map1() {
+                                     var myLocation = new google.maps.LatLng(24.794221, 67.135051);
+                                     var mapOptions = {
+                                         center: myLocation,
+                                         zoom: 16
+                                     };
+
+                                     var marker = new google.maps.Marker({
+                                         position: myLocation,
+                                         title: "Property Location"
+                                     });
+
+                                     var map = new google.maps.Map(document.getElementById("map1"),
+                                         mapOptions);
+                                     marker.setMap(map);
+                                 }
+                                 init_map1();
+                             }
+                             );
+
+                         </script>
+
+                         <style>
+                             .map {
+                                 min-width: 300px;
+                                 min-height: 400px;
+                                 width: 100%;
+                                 height: 100%;
+
+                             }
+                             
+                             .header {
+                                 background-color: #F5F5F5;
+                                 color: #36A0FF;
+                                 height: 70px;
+                                 font-size: 27px;
+                                 padding: 10px;
+
+                             }
+
+                         </style>
+
+					 </div>
+						 
+                    
+                    
+                    
+                    <div class="col-md-6 contact-info">
+						       <h6>Have any Complaint or Suggestion ?</h6>
+							   <p>“Whatever the cost of our libraries, the price is cheap compared to that of an ignorant nation.”  <br /> ― Walter Cronkite </p>
+								<div class="con-text">
+										<address>
+								  <strong>Where to Find Us ?</strong><br>
+								  PAF Base Korangi Creek, Karachi<br>
+								  Reach out to us right now! 9am to 6pm weekdays
+                                            <br />
+                                            <br />
+                                            <strong>Our Emails</strong>
+                                            <br />
+                                            waqarahmed@gmail.com [Waqar Ahmed (CEO)]
+                                            <br />
+                                            tahmed530@gmail.com [Talal Ahmed (Manager)]
+                                            <br />
+
+								</address>
+
+
+								</div>
+							</div>
+					   <div class="clearfix"> </div>
+		           </div>
+			    </div>
+          <!--//contact-->
+
+
+	   <div class="copy">
+		   <p>&copy; 2018 CV Scanner. All Rights Reserved | A Project by - Waqar | Talal </p>
+	   </div>
+{% endblock %}

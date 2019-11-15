@@ -1,0 +1,150 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<!--&lt;!&ndash; start banner Area &ndash;&gt;-->
+			<!--<section class="banner-area relative" id="home">-->
+				<!--<div class="overlay overlay-bg"></div>-->
+				<!--<div class="container">-->
+					<!--<div class="row fullscreen d-flex align-items-center justify-content-center">-->
+						<!--<div class="banner-content col-lg-5">-->
+							<!--<h1 class="text-white">-->
+								<!--&lt;!&ndash; <span>Login</span> &ndash;&gt; Register-->
+							<!--</h1>-->
+							<!--<form action="" method="post">-->
+								<!--<div class="row justify-content-center form-wrap">-->
+									<!--<div class="col-lg-12 form-cols">-->
+										<!--<input type="text" class="form-control" name="company_name" placeholder="Enter First Name">-->
+										<!--<br>-->
+										<!--<input type="text" class="form-control" name="company_loc" placeholder="Enter Last Name">-->
+										<!--<br>-->
+										<!--<input type="text" class="form-control" name="company_desc" placeholder="Enter Email">-->
+										<!--<br>-->
+										<!--<input type="email" class="form-control" name="company_email" placeholder="Enter Password">-->
+										<!--<br>-->
+                                        <!--<input type="email" class="form-control" name="company_contact" placeholder="Enter Password">-->
+										<!--<br>-->
+                                        <!--<input type="email" class="form-control" name="job_title" placeholder="Enter Password">-->
+										<!--<br>-->
+                                        <!--<input type="email" class="form-control" name="job_loc" placeholder="Enter Password">-->
+										<!--<br>-->
+                                        <!--<input type="email" class="form-control" name="job_desc" placeholder="Enter Password">-->
+										<!--<br>-->
+                                        <!--<input type="email" class="form-control" name="job_skill" placeholder="Enter Password">-->
+										<!--<br>-->
+                                        <!--<input type="email" class="form-control" name="job_qual" placeholder="Enter Password">-->
+										<!--<br>-->
+									<!--</div>-->
+									<!--<div class="col-lg-12 form-cols">-->
+										<!--<button type="submit" class="btn btn-info">-->
+									      <!--<span class="lnr lnr-user"></span> Register-->
+									    <!--</button>-->
+									<!--</div>-->
+									<!--&lt;!&ndash; <div class="col-lg-3 form-cols">-->
+										<!--<div class="default-select" id="default-selects"">-->
+											<!--<select>-->
+												<!--<option value="1">Select area</option>-->
+												<!--<option value="2">Dhaka</option>-->
+												<!--<option value="3">Rajshahi</option>-->
+												<!--<option value="4">Barishal</option>-->
+												<!--<option value="5">Noakhali</option>-->
+											<!--</select>-->
+										<!--</div>-->
+									<!--</div>-->
+									<!--<div class="col-lg-3 form-cols">-->
+										<!--<div class="default-select" id="default-selects2">-->
+											<!--<select>-->
+												<!--<option value="1">All Category</option>-->
+												<!--<option value="2">Medical</option>-->
+												<!--<option value="3">Technology</option>-->
+												<!--<option value="4">Goverment</option>-->
+												<!--<option value="5">Development</option>-->
+											<!--</select>-->
+										<!--</div>-->
+									<!--</div> &ndash;&gt;-->
+									<!--&lt;!&ndash; <div class="col-lg-2 form-cols">-->
+									    <!--<button type="button" class="btn btn-info">-->
+									      <!--<span class="lnr lnr-magnifier"></span> Search-->
+									    <!--</button>-->
+									<!--</div> &ndash;&gt;-->
+								<!--</div>-->
+                                <!--<div class="container">{% include 'includes/_messages.html' %}</div>-->
+							<!--</form>-->
+							<!--&lt;!&ndash; <p class="text-white"> <span>Search by tags:</span> Tecnology, Business, Consulting, IT Company, Design, Development</p> &ndash;&gt;-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</section>-->
+			<!--&lt;!&ndash; End banner Area &ndash;&gt;-->
+
+
+<!-- start banner Area -->
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="about-content col-lg-12">
+							<h1 class="text-white">
+								Post Job
+							</h1>
+							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="elements.html"> Post Job</a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->
+
+<!-- Start Align Area -->
+			<div class="whole-wrap">
+				<div class="container">{% include 'includes/_messages.html' %}</div>
+				<div class="container">
+                    <div class="section-top-border">
+						<div class="row">
+							<div class="col-lg-8 col-md-8">
+								<h3 class="mb-30">Enter Company Information</h3>
+								<form method="post" action="">
+									<div class="mt-10">
+										<input type="text" name="company_name" placeholder="Company Name" required class="single-input">
+									</div>
+									<div class="mt-10">
+										<input type="text" name="company_loc" placeholder="Company Location" required class="single-input">
+									</div>
+									<div class="mt-10">
+										<textarea type="text" name="company_desc" placeholder="Company Description" required class="single-input"></textarea>
+									</div>
+									<div class="mt-10">
+										<input type="email" name="company_email" placeholder="Company Email" pattern="[A-Za-z0-9]{1,10}@[A-Za-z0-9]{5,12}.[A-Za-z]{2,4}" title="Entered email is incorrect" required class="single-input">
+									</div>
+                                    <div class="mt-10">
+										<input type="text" name="company_contact" placeholder="Company Contact Number" pattern="[0-9]{4}-[0-9]{7}" title="Entered phone is incorrect" required class="single-input">
+									</div>
+
+                                    <h3 class="mb-30 mt-30">Enter Job Information</h3>
+									<div class="mt-10">
+										<input type="text" name="job_title" placeholder="Job Title" required class="single-input">
+									</div>
+									<div class="mt-10">
+										<input type="text" name="job_loc" placeholder="Job Location" required class="single-input">
+									</div>
+									<div class="mt-10">
+										<textarea type="text" name="job_desc" placeholder="Job Description" required class="single-input"></textarea>
+									</div>
+									<div class="mt-10">
+										<input type="text" name="job_skill" placeholder="Required Skill" required class="single-input">
+									</div>
+                                    <div class="mt-10">
+										<input type="text" name="job_qual" placeholder="Required Qualification" required class="single-input">
+									</div>
+									<div class="mt-10">
+										<input type="text" name="job_exp" placeholder="Required Experience" pattern="[0-9]{1,2}" title="Entered Experience is incorrect" required class="single-input">
+									</div>
+                                    <div class="mt-40">
+                                        <button type="submit" class="genric-btn info e-large">Submit</button>
+									</div>
+                                </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+{% endblock %}

@@ -1,0 +1,89 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<script>
+	function myFunction() {
+  var x = document.getElementById("password-field");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+
+<!-- start banner Area -->
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-center">
+						<div class="banner-content col-lg-5">
+							<h1 class="text-white">
+								<!-- <span>Login</span> --> Register
+							</h1>
+							<form action="" method="post">
+								<div class="row justify-content-center form-wrap">
+									<div class="col-lg-12 form-cols">
+										<input type="text" class="form-control" name="first_name" placeholder="Enter First Name" pattern="^[A-Za-z]+$" title="Entered first name is incorrect" required>
+										<br>
+										<input type="text" class="form-control" name="last_name" placeholder="Enter Last Name" pattern="^[A-Za-z]+$" title="Entered last name is incorrect" required>
+										<br>
+										<input type="email" class="form-control" name="email" placeholder="Enter Email" pattern="[A-Za-z0-9]{1,10}@[A-Za-z0-9]{5,12}.[A-Za-z]{2,4}" title="Entered email is incorrect" required>
+										<br>
+										<input id="password-field" type="password" class="form-control" name="password"  placeholder="Enter Password" minlength="6"  required>
+										<br>
+										<div class="switch-wrap d-flex justify-content-between">
+											<p style="color: white">Show Password</p>
+											<div style="text-align: left; color: white">
+												<!--<input type="checkbox" onclick="myFunction()"> Show Password-->
+												<div class="primary-checkbox">
+													<input type="checkbox" onclick="myFunction()" id="default-checkbox">
+													<label for="default-checkbox"></label>
+												</div>
+											</div>
+										</div>
+										<br>
+									</div>
+									<div class="col-lg-12 form-cols">
+										<button type="submit" class="btn btn-info">
+									      <span class="lnr lnr-user"></span> Register
+									    </button>
+									</div>
+									<!-- <div class="col-lg-3 form-cols">
+										<div class="default-select" id="default-selects"">
+											<select>
+												<option value="1">Select area</option>
+												<option value="2">Dhaka</option>
+												<option value="3">Rajshahi</option>
+												<option value="4">Barishal</option>
+												<option value="5">Noakhali</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-lg-3 form-cols">
+										<div class="default-select" id="default-selects2">
+											<select>
+												<option value="1">All Category</option>
+												<option value="2">Medical</option>
+												<option value="3">Technology</option>
+												<option value="4">Goverment</option>
+												<option value="5">Development</option>
+											</select>
+										</div>
+									</div> -->
+									<!-- <div class="col-lg-2 form-cols">
+									    <button type="button" class="btn btn-info">
+									      <span class="lnr lnr-magnifier"></span> Search
+									    </button>
+									</div> -->
+								</div>
+                                <div class="container">{% include 'includes/_messages.html' %}</div>
+							</form>
+							<!-- <p class="text-white"> <span>Search by tags:</span> Tecnology, Business, Consulting, IT Company, Design, Development</p> -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End banner Area -->
+{% endblock %}
